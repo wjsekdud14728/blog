@@ -1,0 +1,22 @@
+/* 이 사이트에 전체적으로 적용할 내용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.con {
+    max-width:1150px;
+}
+
+.con-min-width {
+    min-width:320px;
+}
+
+html, body {
+    overflow-x:hidden;
+}
+
+a:hover {
+    color:red;
+}

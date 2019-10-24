@@ -1,0 +1,11 @@
+.nav-box-1 {
+    margin-top:20px;
+}
+
+.article-content {
+    margin-top:40px;
+    border-top:5px solid black;
+    padding-top:40px;
+    border-bottom:5px solid black;
+    padding-bottom:40px;
+}
