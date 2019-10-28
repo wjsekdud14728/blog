@@ -2,23 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>전다영 기술 블로그 - 글 1</title>
-    
+    <title>전다영 기술 블로그 - CSS display 속성 정리</title>
+
     <link rel="stylesheet" href="./../lib.css">
     <link rel="stylesheet" href="./../common.css">
     <link rel="stylesheet" href="./article.css">
+
+    <style>
+        /* 이 파일만의 고유 css */
+
+        .article-content table {
+            border-collapse: collapse;
+        }
+
+        .article-content table th,
+        .article-content table td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
+
 <body>
     <h1 class="title-box-1 con">전다영 기술 블로그 - 글 내용</h1>
-    
-    <h2 class="title-box-2 con">글 1</h2>
-    
+
+    <h2 class="title-box-2 con">CSS display 속성 정리</h2>
+
     <div class="article-content con">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aliquam ea repellendus reiciendis blanditiis totam, quia, necessitatibus dolorem. Vitae vero excepturi nam enim quam possimus esse incidunt, ipsam culpa eos.
+        <table>
+            <thead>
+                <tr>
+                    <th>종류</th>
+                    <th>inline-block, inline</th>
+                    <th>block</th>
+                    <th>none</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>너비</th>
+                    <td>최소한으로 줄어든다.</td>
+                    <td>최대한으로 넓어진다.</td>
+                    <td>없어진다.</td>
+                </tr>
+                <tr>
+                    <th>본질</th>
+                    <td>글자화</td>
+                    <td>블록화</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>line 사용</th>
+                    <td>한 줄에 최대한 여러개가 나온다.</td>
+                    <td>한 줄을 무조건 혼자 쓴다.</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>정렬</th>
+                    <td>부모의 text-align에 의해서 정렬</td>
+                    <td>스스로 margin-left, margin-right를 사용해서 정렬</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>
+            예외
+        </h2>
+
+        <ul>
+            <li>a, img, span 엘리먼트는 기본적으로 display가 <strong>inline</strong> 이다.</li>
+            <li><strong>inline</strong>요소에는 width, height, margin, padding 속성이 제대로 적용되지 않는다.</li>
+        </ul>
     </div>
-    
+
     <div class="nav-box-1 con">
         <a href="../">목록보기</a>
     </div>
-</body>
-</html>
+</body></html>

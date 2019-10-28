@@ -5,8 +5,9 @@
 
 .article-list-box > ul > li > a {
     display: block;
-    padding:5px;
+    padding:10px;
     padding-left:0;
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .article-list-box > ul > li > a::before {
